@@ -1,0 +1,2 @@
+class JoinPotinTag < ApplicationRecord
+end
