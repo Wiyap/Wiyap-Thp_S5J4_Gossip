@@ -22,6 +22,9 @@ Tag.reset_pk_sequence
 PrivateMessage.destroy_all
 PrivateMessage.reset_pk_sequence
 
+JoinPotinTag.destroy_all
+JoinPotinTag.reset_pk_sequence
+
 10.times do |i|
   a_city = City.create(name:Faker::Address.city, zip_code:Faker::Address.zip_code)
   puts "#{i+1} City créé"
