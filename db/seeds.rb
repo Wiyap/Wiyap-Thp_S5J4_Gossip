@@ -43,6 +43,10 @@ end
 end
 
 10.times do |i|
+  a_join = JoinPotinTag.create(tag_id:rand(1..10),potin_id:rand(1..10))
+end
+
+10.times do |i|
   a_mp = PrivateMessage.create(content:Faker::Lorem.sentence(word_count: 2),recipient_id:rand(1..10),sender_id:rand(1..10))
   puts "#{i+1} PM créé"
 end
